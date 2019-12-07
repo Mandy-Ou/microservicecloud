@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="microservicecloud-eureka-7002:ejb">
+    <output-path>$PROJECT_DIR$/microservicecloud-eureka-7002/target</output-path>
+    <root id="archive" name="spring-boot-starter-parent-2.1.9.RELEASE.jar" />
+  </artifact>
+</component>

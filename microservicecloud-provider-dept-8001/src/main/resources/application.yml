@@ -17,10 +17,10 @@ spring:
     username: root
     password: 123456
 #    数据源其他配置
-    initialSize: 100
-    minIdle: 500
-    maxActive: 1000
-    maxWait: 60000
+    initialSize: 5
+    minIdle: 10
+    maxActive: 20
+    maxWait: 1000
     timeBetweenEvictionRunsMillis: 60000
     minEvictableIdleTimeMillis: 300000
     validationQuery: SELECT 1 FROM DUAL
@@ -33,3 +33,17 @@ spring:
     maxPoolPreparedStatementPerConnectionSize: 20
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:      # 单机 defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: microservicecloud-dept8001 #自定义服务名称信息
+    prefer-ip-address: true   #访问路径可以显示IP地址
+
+info:
+  app.name: mandy-microservicecloud
+  company.name: www.mandy.com
+  build.artifactId: @project.artifactId@
+  build.version: @project.version@

@@ -16,6 +16,7 @@ public class DeptService {
     @Autowired
     DeptDao deptDao;
 
+
     public boolean add(Dept dept){
         return deptDao.addDept(dept);
     }
