@@ -41,7 +41,7 @@
         <spring-boot.version>2.1.9.RELEASE</spring-boot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <mysql-connector.version>8.0.17</mysql-connector.version>
+        <mysql-connector.version>8.0.28</mysql-connector.version>
         <druid.version>1.0.9</druid.version>
         <mybatis-springboot.version>2.1.0</mybatis-springboot.version>
     </properties>
